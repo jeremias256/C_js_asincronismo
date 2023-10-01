@@ -1,0 +1,25 @@
+{
+  "name": "js-asincronismo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremias256/js-asincronismo.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Jere322",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeremias256/js-asincronismo/issues"
+  },
+  "homepage": "https://github.com/jeremias256/js-asincronismo#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
