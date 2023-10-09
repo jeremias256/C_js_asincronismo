@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/jeremias256/js-asincronismo#readme",
   "dependencies": {
+    "node-fetch": "^3.3.2",
     "xmlhttprequest": "^1.8.0"
-  }
+  },
+  "type": "module"
 }

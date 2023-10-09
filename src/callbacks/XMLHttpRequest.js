@@ -1,6 +1,8 @@
+
 const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 const API = 'https://api.escuelajs.co/api/v1';
 
+/* --------------------------------- CLASE 8 -------------------------------- */
 function fetchData(urlApi, callback) {
   let xhttp = new XMLHttpRequest();
 
@@ -10,7 +12,7 @@ function fetchData(urlApi, callback) {
       if (xhttp.status === 200) {
         callback(null, JSON.parse(xhttp.responseText));
       } else {
-        const error = new Error('Error' + urlApi);
+        const error = new Error(`Error ${urlApi}`);
         return callback(error, null);
       }
     }
@@ -18,6 +20,7 @@ function fetchData(urlApi, callback) {
   xhttp.send();
 }
 
+/* --------------------------------- CLASE 9 -------------------------------- */
 fetchData(`${API}/products`, function (error1, data1) {
   if (error1) return console.error(error1);
   fetchData(`${API}/products/${data1[0].id}`, function (error2, data2) {
